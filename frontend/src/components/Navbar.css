@@ -1,0 +1,11 @@
+.Navbar {
+    background-color: #07080A;
+}
+
+.Navbar__title {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+    color: #FCEEDF;
+}
