@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+
+.MilkCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 2rem;
+    background-image: url('../assets/cowpattern.jpg');
+    background-size: 80%;
+    background-repeat: none;
+    border-radius: 4rem;
+
+}
+
+.MilkCard__div {
+    width: 20rem;
+    border: 0.2rem dashed #ffbdd78a;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Architects Daughter', cursive;
+    background-color: #07080ae4;
+    color: #FCEEDF;
+}
+
+.MilkCard__img {
+    height: 8rem;
+    margin: 2rem;
+}
+
+.MilkCard__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.MilkCard__paragraphDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    color: #FFBDD7;
+
+}
+
+.MilkCard__milkType, .MilkCard__liters {
+    font-size: 0.7rem;
+    font-family: 'Cousine', monospace;
+}
