@@ -1,0 +1,15 @@
+.Pagination {
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.Pagination__btn {
+    width: 5%;
+    margin: 0.5rem; 
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #FFBDD7;
+    font-weight: 600;
+}

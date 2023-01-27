@@ -1,0 +1,17 @@
+.ProductPage__div {
+    margin: 1rem;
+    padding: 2rem 10rem 10rem 10rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.ProductPage__backLink {
+    background-image: url('../assets/Backarrow.png'); 
+    background-color: transparent;
+    background-repeat: no-repeat;  
+    background-size:1rem;        
+    cursor: pointer;           
+    padding-left: 2rem;  
+}

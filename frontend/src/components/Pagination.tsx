@@ -1,10 +1,23 @@
-import HomePage from '../pages/HomePage';
-import ReactPaginate from 'react-paginate';
+import './Pagination.css';
 
-function Pagination() {
+type Props = {
+    totalPosts: number;
+    postsPerPage: number;
+    setCurrentPage: (num: number) => void;
+};
+
+function Pagination(props:Props) {
+    let pages: number[] = [];
+    for(let i = 1; i<= Math.ceil(props.totalPosts/props.postsPerPage); i++) {
+        pages.push(i)
+    }
   return (
     <div className='Pagination'>
-        <h1 className='Pagination__title'>The Milk Store</h1>
+        {
+            pages.map((page, index) => {
+                return <button className='Pagination__btn' key={index} onClick={() => props.setCurrentPage(page)}>{page}</button>
+            })
+        }
     </div>
   );
 }

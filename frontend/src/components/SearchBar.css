@@ -1,3 +1,19 @@
+.SearchBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .SearchBar__form {
     margin: 2rem;
+}
+
+.SearchBar__input {
+    width: 100%;
+    height: 2rem;
+    border: none; 
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #07080a;
+    color: #FCEEDF;
 }

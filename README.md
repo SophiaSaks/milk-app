@@ -4,6 +4,12 @@ A code test for Salt during our PGP-program.
 ## The task
 Making a fullstack application in React using Express for the backend and writing both FE and BE in TypeScript.
 
+## How to run the project
+
+* Clone the project into a local folder, open it inside of a text-editor
+
+* CD into the frontend and backend folders, do an npm install in each, and then npm start in each terminal. 
+
 ## Requirements 
 * The milk data can be stored in the background, cope it from here: https://github.com/saltstudy/pgp-test-milkApp-json
 Get the image from here: milk.png, or use whatever image(s) you want!
