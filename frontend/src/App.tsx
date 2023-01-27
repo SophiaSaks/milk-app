@@ -1,15 +1,13 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import MilkCard from './components/MilkCard';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import Milk from './types';
-import SearchBar from './components/SearchBar';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ProductPage from './pages/ProductPage';
 
 function App() {
   const [milks, setMilks] = useState<Milk[]>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [postsPerPage, setPostsPerPage] = useState<number>(9);
 
   const getMilks = () => {
     axios.get('http://localhost:3001/')
@@ -26,16 +24,12 @@ function App() {
     getMilks();
   }, []);
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost); 
-
   return (
     <div className='App'>
-      <Navbar />
-      <SearchBar />
-      <p className='App__products'>{milks.length} products</p>
-      <MilkCard milkProducts={milks} />
+       <Routes>
+            <Route path='/' element={<HomePage milks={milks} setMilks={setMilks} />} />
+            <Route path='/product/:productId' element={<ProductPage milks={milks} setMilks={setMilks} />} />
+     </Routes>
 
     </div>
   );
