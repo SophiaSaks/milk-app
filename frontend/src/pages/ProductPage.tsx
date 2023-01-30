@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import { Link, useParams } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import ProductPicture from '../assets/milk.png';
-
+import { Slider } from '@mui/material';
 
 
 type Props = {
@@ -26,19 +26,34 @@ function ProductPage(props:Props) {
           <img className='MilkCard__img' src={ProductPicture} alt="product picture" />
           <ul>
             <li>
-              <p>Name:</p>
-              <p>{product.name} </p>
+              <p className='ProductPage__titles'>Name:</p>
+              <p className='ProductPage__info'>{product.name} </p>
             </li>
             <li>
-              <p>Type:</p>
-              <p>{product.type}</p>
+              <p className='ProductPage__titles'>Type:</p>
+              <p className='ProductPage__info'>{product.type}</p>
             </li>
             <li>
-              <p>Storage:</p>
-              <p>{product.storage} </p>
+              <p className='ProductPage__titles'>Storage:</p>
+              <p className='ProductPage__info'>{product.storage} </p>
             </li>
           </ul>
         </div>
+          <div className='ProductPage__slider'>
+          <Slider
+              defaultValue={30}
+              valueLabelDisplay="auto"
+              step={10}
+              marks
+              min={10}
+              max={100}
+              color="secondary"
+          />
+
+          <button className='ProductPage__btn'>Add to Cart</button>
+          </div>
+
+    
       </div>
         
     </div>

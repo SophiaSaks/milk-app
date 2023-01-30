@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+
 .ProductPage__div {
     margin: 1rem;
     padding: 2rem 10rem 10rem 10rem;
@@ -7,6 +10,29 @@ ul {
     list-style: none;
 }
 
+.ProductPage__cardDiv {
+    display: grid; 
+    grid-template-columns: repeat(2, 2fr);
+    background-color: #FFBDD7;
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 5rem;
+}
+
+.ProductPage__btn {
+    width: 15%;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none; 
+    background-color: #07080A;
+    color: #FFBDD7;
+    cursor: pointer;
+    font-family: 'Cousine', monospace;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
 .ProductPage__backLink {
     background-image: url('../assets/Backarrow.png'); 
     background-color: transparent;
@@ -14,4 +40,25 @@ ul {
     background-size:1rem;        
     cursor: pointer;           
     padding-left: 2rem;  
+}
+
+.ProductPage__titles {
+ font-size: 1.2rem;
+ font-family: 'Architects Daughter', cursive;
+ color: #00000095;
+}
+
+.ProductPage__info {
+  font-size: 1.2rem;
+  font-family: 'Cousine', monospace;
+  font-weight: 600;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+.ProductPage__slider {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 5rem;
+    padding-left: 5rem;
 }
